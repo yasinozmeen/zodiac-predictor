@@ -53,6 +53,23 @@ module.exports = [
     },
   },
   {
+    files: ['**/*.test.{js,ts,tsx}', '**/__tests__/**/*.{js,ts,tsx}'],
+    languageOptions: {
+      globals: {
+        describe: 'readonly',
+        it: 'readonly',
+        expect: 'readonly',
+        beforeAll: 'readonly',
+        beforeEach: 'readonly',
+        afterAll: 'readonly',
+        afterEach: 'readonly',
+        test: 'readonly',
+        jest: 'readonly',
+        vi: 'readonly',
+      },
+    },
+  },
+  {
     ignores: ['**/dist/**', '**/node_modules/**', '**/*.d.ts', '**/build/**'],
   },
 ]

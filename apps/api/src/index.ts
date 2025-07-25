@@ -32,13 +32,13 @@ const limiter = rateLimit({
 app.use(limiter)
 
 // General middleware
-app.use(compression())
+app.use(compression() as any)
 app.use(morgan('combined'))
 app.use(express.json({ limit: '10mb' }))
 app.use(express.urlencoded({ extended: true }))
 
 // Health check endpoint
-app.get('/health', (req, res) => {
+app.get('/health', (req: express.Request, res: express.Response) => {
   res.status(200).json({
     status: 'OK',
     timestamp: new Date().toISOString(),

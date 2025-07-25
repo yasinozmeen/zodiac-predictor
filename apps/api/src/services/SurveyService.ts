@@ -1,4 +1,4 @@
-import { SurveyData, SurveyResult } from '@zodiac/shared'
+import type { SurveyData, SurveyResult } from '@zodiac/shared'
 import { ZodiacService } from './ZodiacService.js'
 import { generateId } from '../utils/helpers.js'
 

@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from 'express'
+import express from 'express'
 
 export interface ApiError extends Error {
   statusCode?: number
@@ -7,9 +7,9 @@ export interface ApiError extends Error {
 
 export const errorHandler = (
   err: ApiError,
-  req: Request,
-  res: Response,
-  _next: NextFunction
+  req: express.Request,
+  res: express.Response,
+  _next: express.NextFunction
 ): void => {
   const statusCode = err.statusCode || 500
   const isProduction = process.env.NODE_ENV === 'production'

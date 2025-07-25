@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from 'express'
+import express from 'express'
 import { SurveyService } from '../services/SurveyService.js'
 
 export class SurveyController {
@@ -8,7 +8,11 @@ export class SurveyController {
     this.surveyService = new SurveyService()
   }
 
-  submitSurvey = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  submitSurvey = async (
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ): Promise<void> => {
     try {
       const surveyData = req.body
 
@@ -32,7 +36,11 @@ export class SurveyController {
     }
   }
 
-  getResults = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  getResults = async (
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ): Promise<void> => {
     try {
       const { id } = req.params
       const results = await this.surveyService.getResultsById(id)

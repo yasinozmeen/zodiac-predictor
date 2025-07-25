@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from 'express'
+import express from 'express'
 import { ZodiacService } from '../services/ZodiacService.js'
 
 export class ZodiacController {
@@ -8,7 +8,11 @@ export class ZodiacController {
     this.zodiacService = new ZodiacService()
   }
 
-  getAllSigns = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  getAllSigns = async (
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ): Promise<void> => {
     try {
       const signs = await this.zodiacService.getAllSigns()
       res.json({
@@ -20,7 +24,11 @@ export class ZodiacController {
     }
   }
 
-  getCompatibility = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  getCompatibility = async (
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ): Promise<void> => {
     try {
       const { sign1, sign2 } = req.params
       const compatibility = await this.zodiacService.calculateCompatibility(sign1, sign2)
@@ -34,7 +42,11 @@ export class ZodiacController {
     }
   }
 
-  analyzePersonality = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  analyzePersonality = async (
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ): Promise<void> => {
     try {
       const { birthDate, birthTime, birthLocation, personality } = req.body
 

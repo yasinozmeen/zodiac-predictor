@@ -1,7 +1,7 @@
-import { Router } from 'express'
+import express from 'express'
 import { ZodiacController } from '../controllers/ZodiacController.js'
 
-const router = Router()
+const router = express.Router()
 const zodiacController = new ZodiacController()
 
 // GET /api/zodiac/signs - Get all zodiac signs

@@ -4,24 +4,24 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-gray-200;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-gray-900;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
 @layer components {
   .btn {
-    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background;
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-500 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-white;
   }
   
   .btn-primary {
-    @apply btn bg-primary-500 text-white hover:bg-primary-600;
+    @apply btn bg-pink-500 text-white hover:bg-pink-600;
   }
   
   .btn-secondary {
-    @apply btn bg-secondary-100 text-secondary-900 hover:bg-secondary-200;
+    @apply btn bg-gray-100 text-gray-900 hover:bg-gray-200;
   }
 }

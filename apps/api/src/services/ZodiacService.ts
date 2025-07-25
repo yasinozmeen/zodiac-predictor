@@ -1,4 +1,4 @@
-import { ZodiacSign, PersonalityAnalysis, CompatibilityResult } from '@zodiac/shared'
+import type { ZodiacSign, PersonalityAnalysis, CompatibilityResult } from '@zodiac/shared'
 
 export class ZodiacService {
   private zodiacSigns: ZodiacSign[] = [

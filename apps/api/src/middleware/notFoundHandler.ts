@@ -1,6 +1,10 @@
-import { Request, Response, NextFunction } from 'express'
+import express from 'express'
 
-export const notFoundHandler = (req: Request, res: Response, _next: NextFunction): void => {
+export const notFoundHandler = (
+  req: express.Request,
+  res: express.Response,
+  _next: express.NextFunction
+): void => {
   res.status(404).json({
     success: false,
     message: `Route ${req.originalUrl} not found`,

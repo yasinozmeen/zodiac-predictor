@@ -1,7 +1,7 @@
-import { Router } from 'express'
+import express from 'express'
 import { SurveyController } from '../controllers/SurveyController.js'
 
-const router = Router()
+const router = express.Router()
 const surveyController = new SurveyController()
 
 // POST /api/survey/submit - Submit survey data and get results

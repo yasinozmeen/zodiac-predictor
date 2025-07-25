@@ -1,11 +1,18 @@
 export const ZODIAC_SIGNS = [
-    'Aries', 'Taurus', 'Gemini', 'Cancer',
-    'Leo', 'Virgo', 'Libra', 'Scorpio',
-    'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'
+    'Aries',
+    'Taurus',
+    'Gemini',
+    'Cancer',
+    'Leo',
+    'Virgo',
+    'Libra',
+    'Scorpio',
+    'Sagittarius',
+    'Capricorn',
+    'Aquarius',
+    'Pisces',
 ];
-export const ZODIAC_ELEMENTS = [
-    'Fire', 'Earth', 'Air', 'Water'
-];
+export const ZODIAC_ELEMENTS = ['Fire', 'Earth', 'Air', 'Water'];
 export const ZODIAC_SYMBOLS = {
     Aries: '♈',
     Taurus: '♉',
@@ -18,12 +25,12 @@ export const ZODIAC_SYMBOLS = {
     Sagittarius: '♐',
     Capricorn: '♑',
     Aquarius: '♒',
-    Pisces: '♓'
+    Pisces: '♓',
 };
 export const API_ENDPOINTS = {
     ZODIAC: '/api/zodiac',
     SURVEY: '/api/survey',
-    HEALTH: '/health'
+    HEALTH: '/health',
 };
 export const HTTP_STATUS = {
     OK: 200,
@@ -32,21 +39,30 @@ export const HTTP_STATUS = {
     UNAUTHORIZED: 401,
     FORBIDDEN: 403,
     NOT_FOUND: 404,
-    INTERNAL_SERVER_ERROR: 500
+    INTERNAL_SERVER_ERROR: 500,
 };
 export const APP_CONFIG = {
     NAME: 'Zodiac Predictor',
     VERSION: '1.0.0',
-    DESCRIPTION: 'AI-powered zodiac compatibility and personality prediction application'
+    DESCRIPTION: 'AI-powered zodiac compatibility and personality prediction application',
 };
 export const SURVEY_STEPS = {
     BIRTH_INFO: 1,
     PERSONALITY: 2,
-    INTERESTS: 3
+    INTERESTS: 3,
 };
 export const INTEREST_OPTIONS = [
-    'Art', 'Music', 'Sports', 'Travel',
-    'Technology', 'Books', 'Nature', 'Food',
-    'Movies', 'Gaming', 'Fashion', 'Science'
+    'Art',
+    'Music',
+    'Sports',
+    'Travel',
+    'Technology',
+    'Books',
+    'Nature',
+    'Food',
+    'Movies',
+    'Gaming',
+    'Fashion',
+    'Science',
 ];
 //# sourceMappingURL=index.js.map
