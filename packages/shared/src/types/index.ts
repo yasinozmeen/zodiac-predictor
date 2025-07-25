@@ -25,7 +25,39 @@ export interface PersonalityAnalysis {
   compatibility: CompatibilityResult[]
 }
 
-// Survey related types
+// Survey related types - New Structure
+export interface Category {
+  id: string
+  name: string
+  description: string | null
+  orderIndex: number
+  iconName: string | null
+  createdAt: string
+}
+
+export interface Question {
+  id: string
+  categoryId: string
+  questionText: string
+  orderIndex: number
+  createdAt: string
+  options?: QuestionOption[]
+}
+
+export interface QuestionOption {
+  id: string
+  questionId: string
+  optionText: string
+  orderIndex: number
+}
+
+export interface UserResponse {
+  questionId: string
+  selectedOptionId: string
+  answeredAt: Date
+}
+
+// Legacy survey types (kept for compatibility)
 export interface SurveyData {
   birthDate: string
   birthTime?: string

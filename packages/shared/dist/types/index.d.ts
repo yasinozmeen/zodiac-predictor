@@ -21,6 +21,33 @@ export interface PersonalityAnalysis {
     challenges: string[];
     compatibility: CompatibilityResult[];
 }
+export interface Category {
+    id: string;
+    name: string;
+    description: string | null;
+    orderIndex: number;
+    iconName: string | null;
+    createdAt: string;
+}
+export interface Question {
+    id: string;
+    categoryId: string;
+    questionText: string;
+    orderIndex: number;
+    createdAt: string;
+    options?: QuestionOption[];
+}
+export interface QuestionOption {
+    id: string;
+    questionId: string;
+    optionText: string;
+    orderIndex: number;
+}
+export interface UserResponse {
+    questionId: string;
+    selectedOptionId: string;
+    answeredAt: Date;
+}
 export interface SurveyData {
     birthDate: string;
     birthTime?: string;
