@@ -5,6 +5,7 @@
 ### Core Tables
 
 #### Categories Table
+
 ```sql
 CREATE TABLE categories (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -16,9 +17,11 @@ CREATE TABLE categories (
 );
 ```
 
-**Purpose:** Organize questions into logical categories (Daily Routines, Social Behavior, etc.)
+**Purpose:** Organize questions into logical categories (Daily Routines, Social
+Behavior, etc.)
 
 #### Questions Table
+
 ```sql
 CREATE TABLE questions (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -32,6 +35,7 @@ CREATE TABLE questions (
 **Purpose:** Store individual survey questions with category association
 
 #### Question Options Table
+
 ```sql
 CREATE TABLE question_options (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -44,6 +48,7 @@ CREATE TABLE question_options (
 **Purpose:** Multiple choice answers for each question
 
 #### Zodiac Scoring Table
+
 ```sql
 CREATE TABLE zodiac_scoring (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -58,6 +63,7 @@ CREATE TABLE zodiac_scoring (
 ### Session Management Tables
 
 #### User Sessions Table
+
 ```sql
 CREATE TABLE user_sessions (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -73,6 +79,7 @@ CREATE TABLE user_sessions (
 **Purpose:** Track user survey sessions without requiring registration
 
 #### User Responses Table
+
 ```sql
 CREATE TABLE user_responses (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -86,6 +93,7 @@ CREATE TABLE user_responses (
 **Purpose:** Store user's answers to survey questions
 
 #### Zodiac Results Table
+
 ```sql
 CREATE TABLE zodiac_results (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -116,6 +124,7 @@ erDiagram
 ## Sample Data Structure
 
 ### Categories Data
+
 ```sql
 INSERT INTO categories (name, description, order_index, icon_name) VALUES
 ('Günlük Rutinler', 'Sabah alışkanlıkları ve günlük yaşam patterns', 1, 'sunrise'),
@@ -126,6 +135,7 @@ INSERT INTO categories (name, description, order_index, icon_name) VALUES
 ```
 
 ### Zodiac Signs Reference
+
 ```sql
 -- Zodiac signs enum values
 -- Koç, Boğa, İkizler, Yengeç, Aslan, Başak, Terazi, Akrep, Yay, Oğlak, Kova, Balık
@@ -134,6 +144,7 @@ INSERT INTO categories (name, description, order_index, icon_name) VALUES
 ## Database Indexes
 
 ### Performance Indexes
+
 ```sql
 -- Query optimization indexes
 CREATE INDEX idx_questions_category_order ON questions(category_id, order_index);
@@ -144,6 +155,7 @@ CREATE INDEX idx_user_sessions_session_id ON user_sessions(session_id);
 ```
 
 ### Composite Indexes
+
 ```sql
 -- Complex query optimization
 CREATE INDEX idx_responses_session_question ON user_responses(session_id, question_id);
@@ -153,6 +165,7 @@ CREATE INDEX idx_scoring_option_sign ON zodiac_scoring(question_option_id, zodia
 ## Migration Strategy
 
 ### Migration Files Structure
+
 ```
 migrations/
 ├── 001_create_categories.sql
@@ -167,6 +180,7 @@ migrations/
 ```
 
 ### Seed Data Requirements
+
 - 5 categories with descriptions and icons
 - 50+ questions distributed across categories
 - 3-4 answer options per question
@@ -176,6 +190,7 @@ migrations/
 ## Data Validation Rules
 
 ### Business Rules
+
 - Each question must belong to exactly one category
 - Each question must have 2-4 answer options
 - Each answer option must map to at least one zodiac sign
@@ -183,6 +198,7 @@ migrations/
 - User can only have one response per question per session
 
 ### Data Integrity
+
 - Foreign key constraints enforce referential integrity
 - NOT NULL constraints on required fields
 - Check constraints for valid score values (1-10 range)
@@ -191,12 +207,14 @@ migrations/
 ## Performance Considerations
 
 ### Query Optimization
+
 - Category-based question fetching optimized with indexes
 - Session-based response retrieval cached
 - Zodiac calculation queries pre-optimized
 - Bulk operations for data seeding
 
 ### Scalability Planning
+
 - UUID primary keys for horizontal scaling
 - JSONB for flexible metadata storage
 - Prepared statements and connection pooling

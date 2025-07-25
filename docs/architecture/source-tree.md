@@ -2,7 +2,9 @@
 
 ## Project Overview
 
-Zodiac Predictor is organized as a monorepo using Yarn workspaces, with separate applications for frontend and backend, plus shared packages for common functionality.
+Zodiac Predictor is organized as a monorepo using Yarn workspaces, with separate
+applications for frontend and backend, plus shared packages for common
+functionality.
 
 ## Root Level Structure
 
@@ -25,6 +27,7 @@ zodiac-predictor/
 ## Frontend Application (`apps/web/`)
 
 ### Directory Structure
+
 ```
 apps/web/
 ├── public/                 # Static assets
@@ -83,6 +86,7 @@ apps/web/
 ### Key Frontend Files
 
 #### `src/App.tsx` - Main Application
+
 ```typescript
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
@@ -105,10 +109,12 @@ export const App: React.FC = () => {
 ```
 
 #### `src/services/api.ts` - API Client
-```typescript
-import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001';
+```typescript
+import axios from 'axios'
+
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001'
 
 export const apiClient = axios.create({
   baseURL: `${API_BASE_URL}/api/v1`,
@@ -116,12 +122,13 @@ export const apiClient = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
-});
+})
 ```
 
 ## Backend Application (`apps/api/`)
 
 ### Directory Structure
+
 ```
 apps/api/
 ├── src/                    # Source code
@@ -174,50 +181,53 @@ apps/api/
 ### Key Backend Files
 
 #### `src/app.ts` - Express Application
-```typescript
-import express from 'express';
-import cors from 'cors';
-import helmet from 'helmet';
-import { routes } from './routes';
-import { errorHandler } from './middleware/errorHandler';
-import { rateLimiter } from './middleware/rateLimiter';
 
-const app = express();
+```typescript
+import express from 'express'
+import cors from 'cors'
+import helmet from 'helmet'
+import { routes } from './routes'
+import { errorHandler } from './middleware/errorHandler'
+import { rateLimiter } from './middleware/rateLimiter'
+
+const app = express()
 
 // Security middleware
-app.use(helmet());
-app.use(cors());
-app.use(rateLimiter);
+app.use(helmet())
+app.use(cors())
+app.use(rateLimiter)
 
 // Body parsing
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
 // Routes
-app.use('/api/v1', routes);
+app.use('/api/v1', routes)
 
 // Error handling
-app.use(errorHandler);
+app.use(errorHandler)
 
-export { app };
+export { app }
 ```
 
 #### `src/server.ts` - Server Entry Point
-```typescript
-import { app } from './app';
-import { config } from './utils/config';
-import { logger } from './utils/logger';
 
-const PORT = config.port || 3001;
+```typescript
+import { app } from './app'
+import { config } from './utils/config'
+import { logger } from './utils/logger'
+
+const PORT = config.port || 3001
 
 app.listen(PORT, () => {
-  logger.info(`Server running on port ${PORT}`);
-});
+  logger.info(`Server running on port ${PORT}`)
+})
 ```
 
 ## Shared Package (`packages/shared/`)
 
 ### Directory Structure
+
 ```
 packages/shared/
 ├── src/                    # Source code
@@ -243,48 +253,60 @@ packages/shared/
 ### Key Shared Types
 
 #### `src/types/survey.ts`
+
 ```typescript
 export interface Question {
-  id: string;
-  categoryId: string;
-  questionText: string;
-  orderIndex: number;
-  options: QuestionOption[];
+  id: string
+  categoryId: string
+  questionText: string
+  orderIndex: number
+  options: QuestionOption[]
 }
 
 export interface QuestionOption {
-  id: string;
-  questionId: string;
-  optionText: string;
-  orderIndex: number;
+  id: string
+  questionId: string
+  optionText: string
+  orderIndex: number
 }
 
 export interface UserResponse {
-  questionId: string;
-  selectedOptionId: string;
-  answeredAt: Date;
+  questionId: string
+  selectedOptionId: string
+  answeredAt: Date
 }
 ```
 
 #### `src/types/zodiac.ts`
+
 ```typescript
-export type ZodiacSign = 
-  | 'aries' | 'taurus' | 'gemini' | 'cancer'
-  | 'leo' | 'virgo' | 'libra' | 'scorpio'
-  | 'sagittarius' | 'capricorn' | 'aquarius' | 'pisces';
+export type ZodiacSign =
+  | 'aries'
+  | 'taurus'
+  | 'gemini'
+  | 'cancer'
+  | 'leo'
+  | 'virgo'
+  | 'libra'
+  | 'scorpio'
+  | 'sagittarius'
+  | 'capricorn'
+  | 'aquarius'
+  | 'pisces'
 
 export interface ZodiacResult {
-  predictedSign: ZodiacSign;
-  confidence: number;
-  scores: Record<ZodiacSign, number>;
-  explanation: string;
-  characteristics: string[];
+  predictedSign: ZodiacSign
+  confidence: number
+  scores: Record<ZodiacSign, number>
+  explanation: string
+  characteristics: string[]
 }
 ```
 
 ## Documentation (`docs/`)
 
 ### Structure
+
 ```
 docs/
 ├── prd.md                  # Product Requirements Document
@@ -310,6 +332,7 @@ docs/
 ## Development Workflow
 
 ### Package Scripts (Root Level)
+
 ```json
 {
   "scripts": {
@@ -324,6 +347,7 @@ docs/
 ```
 
 ### Workspace Dependencies
+
 - **Frontend** depends on **Shared** package
 - **Backend** depends on **Shared** package
 - **Shared** has no internal dependencies
@@ -332,11 +356,13 @@ docs/
 ## Build Process
 
 ### Development
+
 1. **Start Development:** `yarn dev` runs both frontend and backend
 2. **Hot Reload:** Changes trigger automatic rebuilds
 3. **Type Checking:** TypeScript compilation happens in real-time
 
 ### Production
+
 1. **Build Shared:** `yarn workspace @zodiac/shared build`
 2. **Build API:** `yarn workspace @zodiac/api build`
 3. **Build Web:** `yarn workspace @zodiac/web build`
@@ -345,38 +371,45 @@ docs/
 ## Import/Export Patterns
 
 ### Importing Shared Types
+
 ```typescript
 // In frontend or backend
-import { Question, ZodiacResult, ZODIAC_SIGNS } from '@zodiac/shared';
+import { Question, ZodiacResult, ZODIAC_SIGNS } from '@zodiac/shared'
 ```
 
 ### Internal Imports
+
 ```typescript
 // Frontend
-import { QuestionCard } from '@/components/survey/QuestionCard';
-import { useQuestions } from '@/hooks/useQuestions';
+import { QuestionCard } from '@/components/survey/QuestionCard'
+import { useQuestions } from '@/hooks/useQuestions'
 
 // Backend
-import { QuestionService } from '@/services/questionService';
-import { questionRoutes } from '@/routes/questions';
+import { QuestionService } from '@/services/questionService'
+import { questionRoutes } from '@/routes/questions'
 ```
 
 ## File Naming Conventions
 
 ### Components
+
 - **React Components:** PascalCase (`.tsx`)
 - **Hooks:** camelCase starting with `use` (`.ts`)
 - **Services:** camelCase ending with `Service` (`.ts`)
 - **Types:** camelCase (`.ts`)
 
 ### Backend
+
 - **Controllers:** camelCase ending with `Controller` (`.ts`)
 - **Routes:** camelCase (`.ts`)
 - **Models:** PascalCase (`.ts`)
 - **Services:** camelCase ending with `Service` (`.ts`)
 
 ### Documentation
+
 - **Markdown Files:** kebab-case (`.md`)
 - **Config Files:** kebab-case or camelCase based on tool requirements
 
-This source tree structure supports scalable development while maintaining clear separation of concerns and enabling efficient code sharing across the application.
+This source tree structure supports scalable development while maintaining clear
+separation of concerns and enabling efficient code sharing across the
+application.

@@ -47,7 +47,7 @@ app.get('/health', (req: express.Request, res: express.Response) => {
 })
 
 // API routes
-app.use('/api', apiRouter)
+app.use('/api/v1', apiRouter)
 
 // Error handling middleware
 app.use(notFoundHandler)

@@ -2,8 +2,8 @@
 
 ## Deployment Architecture Overview
 
-**Platform:** AWS + Supabase Hybrid Approach
-**Strategy:** Jamstack with serverless backend functions
+**Platform:** AWS + Supabase Hybrid Approach **Strategy:** Jamstack with
+serverless backend functions
 
 ### Infrastructure Components
 
@@ -18,6 +18,7 @@
 ### S3 Static Website Hosting
 
 #### Bucket Configuration
+
 ```bash
 # Create S3 bucket for frontend hosting
 aws s3 mb s3://zodiac-predictor-frontend --region us-east-1
@@ -29,61 +30,65 @@ aws s3 website s3://zodiac-predictor-frontend \
 ```
 
 #### Bucket Policy
+
 ```json
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "PublicReadGetObject",
-            "Effect": "Allow",
-            "Principal": "*",
-            "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::zodiac-predictor-frontend/*"
-        }
-    ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadGetObject",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::zodiac-predictor-frontend/*"
+    }
+  ]
 }
 ```
 
 ### CloudFront CDN Distribution
 
 #### Distribution Configuration
+
 ```bash
 # Create CloudFront distribution
 aws cloudfront create-distribution --distribution-config file://cloudfront-config.json
 ```
 
 **cloudfront-config.json:**
+
 ```json
 {
-    "CallerReference": "zodiac-predictor-2024",
-    "Comment": "Zodiac Predictor CDN Distribution",
-    "Origins": {
-        "Quantity": 1,
-        "Items": [
-            {
-                "Id": "S3-zodiac-predictor-frontend",
-                "DomainName": "zodiac-predictor-frontend.s3.amazonaws.com",
-                "S3OriginConfig": {
-                    "OriginAccessIdentity": ""
-                }
-            }
-        ]
-    },
-    "DefaultCacheBehavior": {
-        "TargetOriginId": "S3-zodiac-predictor-frontend",
-        "ViewerProtocolPolicy": "redirect-to-https",
-        "MinTTL": 0,
-        "ForwardedValues": {
-            "QueryString": false,
-            "Cookies": {"Forward": "none"}
+  "CallerReference": "zodiac-predictor-2024",
+  "Comment": "Zodiac Predictor CDN Distribution",
+  "Origins": {
+    "Quantity": 1,
+    "Items": [
+      {
+        "Id": "S3-zodiac-predictor-frontend",
+        "DomainName": "zodiac-predictor-frontend.s3.amazonaws.com",
+        "S3OriginConfig": {
+          "OriginAccessIdentity": ""
         }
+      }
+    ]
+  },
+  "DefaultCacheBehavior": {
+    "TargetOriginId": "S3-zodiac-predictor-frontend",
+    "ViewerProtocolPolicy": "redirect-to-https",
+    "MinTTL": 0,
+    "ForwardedValues": {
+      "QueryString": false,
+      "Cookies": { "Forward": "none" }
     }
+  }
 }
 ```
 
 ### Lambda Functions Deployment
 
 #### Function Structure
+
 ```
 lambda-functions/
 ├── create-session/
@@ -101,6 +106,7 @@ lambda-functions/
 ```
 
 #### Deployment Script
+
 ```bash
 #!/bin/bash
 # deploy-lambda.sh
@@ -111,7 +117,7 @@ for function in create-session get-questions submit-response calculate-zodiac; d
     npm install
     zip -r ../../../$function.zip .
     cd ../../..
-    
+
     aws lambda create-function \
         --function-name zodiac-$function \
         --runtime nodejs20.x \
@@ -124,6 +130,7 @@ done
 ### API Gateway Configuration
 
 #### REST API Setup
+
 ```bash
 # Create REST API
 aws apigateway create-rest-api --name "zodiac-predictor-api"
@@ -147,6 +154,7 @@ aws apigateway put-method \
 ### Database Setup
 
 #### Environment Variables
+
 ```bash
 # Production Supabase Configuration
 SUPABASE_URL=https://your-project.supabase.co
@@ -155,6 +163,7 @@ SUPABASE_SERVICE_KEY=your-service-role-key
 ```
 
 #### Connection Configuration
+
 ```javascript
 // supabase-client.js
 import { createClient } from '@supabase/supabase-js'
@@ -168,6 +177,7 @@ export const supabase = createClient(supabaseUrl, supabaseKey)
 ### Database Migration Deployment
 
 #### Migration Script
+
 ```bash
 #!/bin/bash
 # deploy-database.sh
@@ -184,6 +194,7 @@ npx supabase seed --db-url "$DATABASE_URL"
 ### GitHub Actions Workflow
 
 **.github/workflows/deploy.yml:**
+
 ```yaml
 name: Deploy to AWS
 
@@ -194,37 +205,40 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '20'
-        
-    - name: Install dependencies
-      run: npm ci
-      
-    - name: Build frontend
-      run: npm run build:web
-      
-    - name: Deploy to S3
-      run: aws s3 sync apps/web/dist s3://zodiac-predictor-frontend --delete
-      env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        
-    - name: Invalidate CloudFront
-      run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
-      
-    - name: Deploy Lambda functions
-      run: ./scripts/deploy-lambda.sh
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build frontend
+        run: npm run build:web
+
+      - name: Deploy to S3
+        run: aws s3 sync apps/web/dist s3://zodiac-predictor-frontend --delete
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      - name: Invalidate CloudFront
+        run:
+          aws cloudfront create-invalidation --distribution-id ${{
+          secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+
+      - name: Deploy Lambda functions
+        run: ./scripts/deploy-lambda.sh
 ```
 
 ### Environment Management
 
 #### Production Environment Variables
+
 ```bash
 # AWS Configuration
 AWS_REGION=us-east-1
@@ -240,6 +254,7 @@ API_BASE_URL=https://api.zodiac-predictor.com
 ```
 
 #### Secrets Management
+
 - Use AWS Secrets Manager for sensitive configuration
 - Store database credentials securely
 - Rotate API keys regularly
@@ -250,6 +265,7 @@ API_BASE_URL=https://api.zodiac-predictor.com
 ### Route 53 DNS Setup
 
 #### Hosted Zone Configuration
+
 ```bash
 # Create hosted zone
 aws route53 create-hosted-zone --name zodiac-predictor.com --caller-reference 2024-setup
@@ -263,6 +279,7 @@ aws route53 change-resource-record-sets \
 ### SSL Certificate
 
 #### Certificate Manager Setup
+
 ```bash
 # Request SSL certificate
 aws acm request-certificate \
@@ -276,6 +293,7 @@ aws acm request-certificate \
 ### CloudWatch Configuration
 
 #### Metrics and Alarms
+
 ```bash
 # Create CloudWatch alarm for Lambda errors
 aws cloudwatch put-metric-alarm \
@@ -292,6 +310,7 @@ aws cloudwatch put-metric-alarm \
 ### Performance Monitoring
 
 #### Key Metrics to Track
+
 - **Frontend Metrics:** Core Web Vitals, page load times, bounce rate
 - **Backend Metrics:** API response times, error rates, Lambda duration
 - **Database Metrics:** Query performance, connection pool usage
@@ -302,12 +321,14 @@ aws cloudwatch put-metric-alarm \
 ### AWS Free Tier Usage
 
 #### Resource Limits
+
 - **S3:** 5GB storage, 20,000 GET requests
 - **CloudFront:** 50GB data transfer, 2,000,000 HTTP requests
 - **Lambda:** 1M requests, 400,000 GB-seconds compute time
 - **API Gateway:** 1M API calls per month
 
 #### Cost Monitoring
+
 ```bash
 # Set up billing alerts
 aws budgets create-budget \
@@ -318,12 +339,14 @@ aws budgets create-budget \
 ## Security Considerations
 
 ### Infrastructure Security
+
 - Enable AWS CloudTrail for audit logging
 - Configure IAM roles with least privilege access
 - Use VPC endpoints for private service communication
 - Enable AWS GuardDuty for threat detection
 
 ### Application Security
+
 - Implement rate limiting on API endpoints
 - Validate all user inputs
 - Use HTTPS everywhere
@@ -332,6 +355,7 @@ aws budgets create-budget \
 ## Deployment Checklist
 
 ### Pre-deployment
+
 - [ ] All environment variables configured
 - [ ] Database migrations tested
 - [ ] SSL certificates validated
@@ -339,6 +363,7 @@ aws budgets create-budget \
 - [ ] Monitoring alerts set up
 
 ### Post-deployment
+
 - [ ] Smoke tests passing
 - [ ] Performance benchmarks met
 - [ ] Error tracking functional

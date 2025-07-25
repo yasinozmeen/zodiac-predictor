@@ -1,15 +1,22 @@
 # Working in the Brownfield: A Complete Guide
 
-> **HIGHLY RECOMMENDED: Use Gemini Web or Gemini CLI for Brownfield Documentation Generation!**
+> **HIGHLY RECOMMENDED: Use Gemini Web or Gemini CLI for Brownfield
+> Documentation Generation!**
 >
-> Gemini Web's 1M+ token context window or Gemini CLI (when its working) can analyze your ENTIRE codebase or critical sections of it all at once (obviously within reason):
+> Gemini Web's 1M+ token context window or Gemini CLI (when its working) can
+> analyze your ENTIRE codebase or critical sections of it all at once (obviously
+> within reason):
 >
 > - Upload via GitHub URL or use gemini cli in the project folder
-> - If in the web: Upload up to 1000 files or the zipped project or just give it the github url
+> - If in the web: Upload up to 1000 files or the zipped project or just give it
+>   the github url
 
 ## What is Brownfield Development?
 
-Brownfield development refers to adding features, fixing bugs, or modernizing existing software projects. Unlike greenfield (new) projects, brownfield work requires understanding existing code, respecting constraints, and ensuring new changes integrate seamlessly without breaking existing functionality.
+Brownfield development refers to adding features, fixing bugs, or modernizing
+existing software projects. Unlike greenfield (new) projects, brownfield work
+requires understanding existing code, respecting constraints, and ensuring new
+changes integrate seamlessly without breaking existing functionality.
 
 ## When to Use BMad for Brownfield
 
@@ -22,7 +29,10 @@ Brownfield development refers to adding features, fixing bugs, or modernizing ex
 
 ## When NOT to use a Brownfield Flow
 
-If you have just completed an MVP with BMad, and you want to continue with post-MVP, its easier to just talk to the PM and ask him to work with you to create a new epic to add into the PRD, shard out the epic, update any architecture documents with the architect, and just go from there.
+If you have just completed an MVP with BMad, and you want to continue with
+post-MVP, its easier to just talk to the PM and ask him to work with you to
+create a new epic to add into the PRD, shard out the epic, update any
+architecture documents with the architect, and just go from there.
 
 ## The Complete Brownfield Workflow
 
@@ -30,7 +40,8 @@ If you have just completed an MVP with BMad, and you want to continue with post-
 
 #### Approach A: PRD-First (Recommended if adding very large and complex new features, single or multiple epics or massive changes)
 
-**Best for**: Large codebases, monorepos, or when you know exactly what you want to build
+**Best for**: Large codebases, monorepos, or when you know exactly what you want
+to build
 
 1. **Create PRD First** to define requirements
 2. **Document only relevant areas** based on PRD needs
@@ -62,7 +73,8 @@ The PM will:
 - **Identify affected areas** that need documentation
 - **Create focused PRD** with clear scope
 
-**Key Advantage**: The PRD identifies which parts of your monorepo/large codebase actually need documentation!
+**Key Advantage**: The PRD identifies which parts of your monorepo/large
+codebase actually need documentation!
 
 #### Phase 2: Focused Documentation
 
@@ -76,7 +88,8 @@ The PM will:
 The analyst will:
 
 - **Ask about your focus** if no PRD was provided
-- **Offer options**: Create PRD, provide requirements, or describe the enhancement
+- **Offer options**: Create PRD, provide requirements, or describe the
+  enhancement
 - **Reference the PRD/description** to understand scope
 - **Focus on relevant modules** identified in PRD or your description
 - **Skip unrelated areas** to keep docs lean
@@ -84,14 +97,16 @@ The analyst will:
 
 The analyst creates:
 
-- **One comprehensive architecture document** following fullstack-architecture template
+- **One comprehensive architecture document** following fullstack-architecture
+  template
 - **Covers all system aspects** in a single file
 - **Easy to copy and save** as `docs/project-architecture.md`
 - **Can be sharded later** in IDE if desired
 
 For example, if you say "Add payment processing to user service":
 
-- Documents only: user service, API endpoints, database schemas, payment integrations
+- Documents only: user service, API endpoints, database schemas, payment
+  integrations
 - Creates focused source tree showing only payment-related code paths
 - Skips: admin panels, reporting modules, unrelated microservices
 
@@ -133,7 +148,8 @@ The PM agent will:
 **How PM Agent Gets Project Context**:
 
 - In Gemini Web: Already has full project context from Phase 1 documentation
-- In IDE: Will ask "Please provide the path to your existing project documentation"
+- In IDE: Will ask "Please provide the path to your existing project
+  documentation"
 
 **Key Prompts You'll Encounter**:
 
@@ -206,7 +222,6 @@ The PO ensures:
 Follow the enhanced IDE Development Workflow:
 
 1. **Ensure documents are in project**:
-
    - Copy `docs/prd.md` (or brownfield-prd.md)
    - Copy `docs/architecture.md` (or brownfield-architecture.md)
 
@@ -302,11 +317,13 @@ Document:
 
 ### "The AI doesn't understand my codebase"
 
-**Solution**: Re-run `document-project` with more specific paths to critical files
+**Solution**: Re-run `document-project` with more specific paths to critical
+files
 
 ### "Generated plans don't fit our patterns"
 
-**Solution**: Update generated documentation with your specific conventions before planning phase
+**Solution**: Update generated documentation with your specific conventions
+before planning phase
 
 ### "Too much boilerplate for small changes"
 
@@ -314,7 +331,8 @@ Document:
 
 ### "Integration points unclear"
 
-**Solution**: Provide more context during PRD creation, specifically highlighting integration systems
+**Solution**: Provide more context during PRD creation, specifically
+highlighting integration systems
 
 ## Quick Reference
 
@@ -356,6 +374,10 @@ Is this a major enhancement affecting multiple systems?
 
 ## Conclusion
 
-Brownfield development with BMad-Method provides structure and safety when modifying existing systems. The key is providing comprehensive context through documentation, using specialized templates that consider integration requirements, and following workflows that respect existing constraints while enabling progress.
+Brownfield development with BMad-Method provides structure and safety when
+modifying existing systems. The key is providing comprehensive context through
+documentation, using specialized templates that consider integration
+requirements, and following workflows that respect existing constraints while
+enabling progress.
 
 Remember: **Document First, Plan Carefully, Integrate Safely**
