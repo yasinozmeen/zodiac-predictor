@@ -67,9 +67,93 @@ export class ApiResponse {
   }
 
   /**
+   * Send updated response
+   */
+  static updated<T>(res: Response, data: T, message: string): Response {
+    return this.success(res, data, message, 200, 'UPDATED')
+  }
+
+  /**
+   * Send deleted response
+   */
+  static deleted(res: Response, message: string = 'Resource deleted successfully'): Response {
+    return this.success(res, null, message, 200, 'DELETED')
+  }
+
+  /**
+   * Send paginated response
+   */
+  static paginated<T>(
+    res: Response,
+    data: T[],
+    page: number,
+    limit: number,
+    total: number,
+    message: string = 'Data retrieved successfully'
+  ): Response {
+    const totalPages = Math.ceil(total / limit)
+
+    const response = {
+      success: true,
+      data,
+      message,
+      timestamp: new Date().toISOString(),
+      pagination: {
+        page,
+        limit,
+        total,
+        totalPages,
+        hasNext: page < totalPages,
+        hasPrev: page > 1,
+      },
+    }
+
+    return res.status(200).json(response)
+  }
+
+  /**
    * Send multi-status response (for bulk operations)
    */
   static multiStatus<T>(res: Response, data: T, message: string): Response {
-    return this.success(res, data, message, 207)
+    return this.success(res, data, message, 207, 'MULTI_STATUS')
+  }
+
+  /**
+   * Send unauthorized response
+   */
+  static unauthorized(res: Response, message: string = 'Unauthorized access'): Response {
+    return this.error(res, message, 401, undefined, undefined, 'UNAUTHORIZED')
+  }
+
+  /**
+   * Send forbidden response
+   */
+  static forbidden(res: Response, message: string = 'Access forbidden'): Response {
+    return this.error(res, message, 403, undefined, undefined, 'FORBIDDEN')
+  }
+
+  /**
+   * Send conflict response
+   */
+  static conflict(res: Response, message: string, details?: Record<string, unknown>): Response {
+    return this.error(res, message, 409, undefined, details, 'CONFLICT')
+  }
+
+  /**
+   * Send too many requests response
+   */
+  static tooManyRequests(res: Response, message: string = 'Too many requests'): Response {
+    return this.error(res, message, 429, undefined, undefined, 'TOO_MANY_REQUESTS')
+  }
+
+  /**
+   * Send internal server error response
+   */
+  static internalError(
+    res: Response,
+    message: string = 'Internal server error',
+    error?: any
+  ): Response {
+    return this.error(res, message, 500, error, undefined, 'INTERNAL_ERROR')
   }
 }

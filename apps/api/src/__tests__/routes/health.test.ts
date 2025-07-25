@@ -1,6 +1,6 @@
 import request from 'supertest'
 import express from 'express'
-import { healthRouter } from '../../routes/health'
+import { healthRouter } from '../../routes/health.js'
 
 // Mock dependencies completely
 jest.mock('../../utils/supabase', () => ({
