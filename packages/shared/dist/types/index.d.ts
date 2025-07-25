@@ -1,27 +1,63 @@
 export interface ZodiacSign {
-    id: string;
     name: string;
     symbol: string;
-    element: 'fire' | 'earth' | 'air' | 'water';
-    dateRange: {
+    element: 'Fire' | 'Earth' | 'Air' | 'Water';
+    dates: {
         start: string;
         end: string;
     };
 }
-export interface SurveyResponse {
-    questionId: string;
-    answer: string | number;
-}
-export interface PredictionResult {
-    primarySign: ZodiacSign;
-    confidence: number;
-    traits: string[];
+export interface CompatibilityResult {
+    sign1: string;
+    sign2: string;
+    percentage: number;
     description: string;
 }
-export interface ApiResponse<T> {
+export interface PersonalityAnalysis {
+    zodiacSign: string;
+    element: string;
+    traits: string[];
+    strengths: string[];
+    challenges: string[];
+    compatibility: CompatibilityResult[];
+}
+export interface SurveyData {
+    birthDate: string;
+    birthTime?: string;
+    birthLocation: string;
+    personality?: string;
+    interests?: string[];
+}
+export interface SurveyResult {
+    id: string;
+    timestamp: string;
+    surveyData: SurveyData;
+    personalityAnalysis: PersonalityAnalysis;
+    recommendations: string[];
+    insights: string[];
+}
+export interface ApiResponse<T = any> {
     success: boolean;
     data?: T;
-    error?: string;
     message?: string;
+    timestamp?: string;
+}
+export interface ApiError {
+    success: false;
+    message: string;
+    stack?: string;
+    timestamp: string;
+}
+export interface User {
+    id: string;
+    email: string;
+    name: string;
+    createdAt: string;
+    updatedAt: string;
+}
+export interface UserSession {
+    userId: string;
+    token: string;
+    expiresAt: string;
 }
 //# sourceMappingURL=index.d.ts.map

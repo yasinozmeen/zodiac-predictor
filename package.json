@@ -1,0 +1,49 @@
+{
+  "name": "zodiac-predictor",
+  "version": "1.0.0",
+  "description": "AI-powered zodiac compatibility and personality prediction application",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "yarn@4.0.0",
+  "scripts": {
+    "dev": "concurrently \"yarn workspace @zodiac/web dev\" \"yarn workspace @zodiac/api dev\"",
+    "build": "yarn workspaces foreach -A run build",
+    "test": "yarn workspaces foreach -A run test",
+    "lint": "yarn workspaces foreach -A run lint",
+    "lint:fix": "yarn workspaces foreach -A run lint:fix",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "type-check": "yarn workspaces foreach -A run type-check",
+    "clean": "yarn workspaces foreach -A run clean && rimraf node_modules .yarn/cache",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "concurrently": "^8.2.2",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,json,md}": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "yarn": ">=4.0.0"
+  }
+}

@@ -1,20 +1,52 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.THEME_COLORS = exports.API_ENDPOINTS = exports.ZODIAC_SIGNS = void 0;
-exports.ZODIAC_SIGNS = [
-    'aries', 'taurus', 'gemini', 'cancer',
-    'leo', 'virgo', 'libra', 'scorpio',
-    'sagittarius', 'capricorn', 'aquarius', 'pisces'
+export const ZODIAC_SIGNS = [
+    'Aries', 'Taurus', 'Gemini', 'Cancer',
+    'Leo', 'Virgo', 'Libra', 'Scorpio',
+    'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'
 ];
-exports.API_ENDPOINTS = {
-    SURVEY: '/api/v1/survey',
-    PREDICTION: '/api/v1/prediction',
-    RESULTS: '/api/v1/results'
+export const ZODIAC_ELEMENTS = [
+    'Fire', 'Earth', 'Air', 'Water'
+];
+export const ZODIAC_SYMBOLS = {
+    Aries: '♈',
+    Taurus: '♉',
+    Gemini: '♊',
+    Cancer: '♋',
+    Leo: '♌',
+    Virgo: '♍',
+    Libra: '♎',
+    Scorpio: '♏',
+    Sagittarius: '♐',
+    Capricorn: '♑',
+    Aquarius: '♒',
+    Pisces: '♓'
 };
-exports.THEME_COLORS = {
-    PINK_PRIMARY: '#ec4899',
-    PINK_SOFT: '#f8d7da',
-    PINK_DUSTY: '#e7c3c8',
-    PINK_DEEP: '#be185d'
+export const API_ENDPOINTS = {
+    ZODIAC: '/api/zodiac',
+    SURVEY: '/api/survey',
+    HEALTH: '/health'
 };
+export const HTTP_STATUS = {
+    OK: 200,
+    CREATED: 201,
+    BAD_REQUEST: 400,
+    UNAUTHORIZED: 401,
+    FORBIDDEN: 403,
+    NOT_FOUND: 404,
+    INTERNAL_SERVER_ERROR: 500
+};
+export const APP_CONFIG = {
+    NAME: 'Zodiac Predictor',
+    VERSION: '1.0.0',
+    DESCRIPTION: 'AI-powered zodiac compatibility and personality prediction application'
+};
+export const SURVEY_STEPS = {
+    BIRTH_INFO: 1,
+    PERSONALITY: 2,
+    INTERESTS: 3
+};
+export const INTEREST_OPTIONS = [
+    'Art', 'Music', 'Sports', 'Travel',
+    'Technology', 'Books', 'Nature', 'Food',
+    'Movies', 'Gaming', 'Fashion', 'Science'
+];
 //# sourceMappingURL=index.js.map
