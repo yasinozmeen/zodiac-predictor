@@ -3,6 +3,7 @@ const tseslint = require('@typescript-eslint/eslint-plugin')
 const tsparser = require('@typescript-eslint/parser')
 const react = require('eslint-plugin-react')
 const reactHooks = require('eslint-plugin-react-hooks')
+const jsxA11y = require('eslint-plugin-jsx-a11y')
 
 module.exports = [
   js.configs.recommended,
@@ -29,12 +30,17 @@ module.exports = [
         global: 'readonly',
         window: 'readonly',
         document: 'readonly',
+        setTimeout: 'readonly',
+        clearTimeout: 'readonly',
+        setInterval: 'readonly',
+        clearInterval: 'readonly',
       },
     },
     plugins: {
       '@typescript-eslint': tseslint,
       react: react,
       'react-hooks': reactHooks,
+      'jsx-a11y': jsxA11y,
     },
     rules: {
       'prefer-const': 'error',
@@ -45,6 +51,12 @@ module.exports = [
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       'react/react-in-jsx-scope': 'off',
       'react/prop-types': 'off',
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
+      'jsx-a11y/alt-text': 'warn',
+      'jsx-a11y/anchor-is-valid': 'warn',
+      'jsx-a11y/click-events-have-key-events': 'warn',
+      'jsx-a11y/no-noninteractive-element-interactions': 'warn',
     },
     settings: {
       react: {
@@ -66,6 +78,8 @@ module.exports = [
         test: 'readonly',
         jest: 'readonly',
         vi: 'readonly',
+        beforeAll: 'readonly',
+        afterAll: 'readonly',
       },
     },
   },
