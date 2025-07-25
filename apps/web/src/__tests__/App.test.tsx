@@ -12,26 +12,43 @@ describe('App Component', () => {
     expect(document.body).toBeInTheDocument()
   })
 
-  it('displays header navigation', () => {
+  it('displays header navigation with Turkish content', () => {
     renderApp()
 
     // Check for main navigation elements
-    expect(screen.getByText('✨ Zodiac Predictor')).toBeInTheDocument()
-    expect(screen.getByText('Home')).toBeInTheDocument()
-    expect(screen.getByText('Take Survey')).toBeInTheDocument()
+    expect(screen.getByText('Zodiac Predictor')).toBeInTheDocument()
+    expect(screen.getAllByText('Ana Sayfa')).toHaveLength(2) // Desktop and mobile menu
+    expect(screen.getAllByText('Anket')).toHaveLength(2)
+    expect(screen.getAllByText('Sonuçlar')).toHaveLength(2)
   })
 
-  it('displays footer', () => {
+  it('displays footer with Turkish content', () => {
     renderApp()
 
     expect(screen.getByText(/© 2025 Zodiac Predictor/)).toBeInTheDocument()
+    expect(screen.getByText(/Yıldızlarla yapılmış/)).toBeInTheDocument()
   })
 
-  it('shows welcome message on home page', () => {
+  it('shows welcome message on home page', async () => {
     renderApp()
 
-    expect(screen.getByText('Discover Your')).toBeInTheDocument()
-    expect(screen.getByText('Cosmic Connection')).toBeInTheDocument()
-    expect(screen.getByText(/Unlock the secrets of zodiac compatibility/)).toBeInTheDocument()
+    // Wait for lazy-loaded content
+    await screen.findByText(/Kozmik Bağlantınızı/)
+    expect(screen.getByText(/Keşfedin/)).toBeInTheDocument()
+    expect(screen.getByText(/Yapay zeka destekli astrolojik öngörülerimiz/)).toBeInTheDocument()
+  })
+
+  it('has accessible navigation', () => {
+    renderApp()
+
+    const nav = screen.getByRole('navigation', { name: /main navigation/i })
+    expect(nav).toBeInTheDocument()
+  })
+
+  it('has proper semantic structure', () => {
+    renderApp()
+
+    expect(screen.getByRole('main')).toBeInTheDocument()
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
   })
 })

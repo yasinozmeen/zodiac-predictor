@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,22 +8,83 @@
   * {
     @apply border-gray-200;
   }
+  
+  html {
+    font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  }
+  
   body {
-    @apply bg-white text-gray-900;
+    @apply bg-pink-mystique text-gray-900;
     font-feature-settings: "rlig" 1, "calt" 1;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium;
+  }
+
+  h1 {
+    @apply text-3xl font-semibold leading-tight;
+  }
+
+  h2 {
+    @apply text-2xl font-medium leading-snug;
+  }
+
+  h3 {
+    @apply text-xl font-medium leading-normal;
+  }
+
+  /* Focus indicators for accessibility */
+  button:focus,
+  a:focus,
+  input:focus,
+  select:focus,
+  textarea:focus {
+    @apply outline-none ring-2 ring-primary-pink ring-offset-2;
   }
 }
 
 @layer components {
   .btn {
-    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-500 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-white;
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-pink focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-white;
   }
   
   .btn-primary {
-    @apply btn bg-pink-500 text-white hover:bg-pink-600;
+    @apply btn bg-primary-pink text-white hover:bg-deep-pink shadow-md hover:shadow-lg;
   }
   
   .btn-secondary {
-    @apply btn bg-gray-100 text-gray-900 hover:bg-gray-200;
+    @apply btn bg-rose-gold text-deep-pink hover:bg-soft-pink border border-rose-gold;
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent text-primary-pink hover:bg-dusty-pink border border-primary-pink;
+  }
+
+  .card {
+    @apply bg-white/90 backdrop-blur-sm rounded-lg shadow-lg border border-rose-gold/20 p-6;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-pink to-deep-pink bg-clip-text text-transparent;
+  }
+
+  .mystical-text {
+    font-family: 'Dancing Script', ui-serif, serif;
+    @apply text-primary-pink;
+  }
+
+  /* Responsive typography */
+  .hero-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl font-medium leading-snug;
+  }
+
+  .card-title {
+    @apply text-xl font-medium leading-normal;
   }
 }
