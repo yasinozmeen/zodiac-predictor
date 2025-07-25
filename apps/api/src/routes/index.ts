@@ -4,6 +4,8 @@ import surveyRoutes from './survey.js'
 import { categoriesRouter } from './categories.js'
 import { questionsRouter } from './questions.js'
 import { healthRouter } from './health.js'
+import { sessionRoutes } from './sessions.js'
+import { responseRoutes } from './responses.js'
 
 const router = express.Router()
 
@@ -18,6 +20,8 @@ router.get('/', (req: express.Request, res: express.Response) => {
       questions: '/api/v1/questions',
       zodiac: '/api/v1/zodiac',
       survey: '/api/v1/survey',
+      sessions: '/api/v1/sessions',
+      responses: '/api/v1/responses',
     },
   })
 })
@@ -28,5 +32,7 @@ router.use('/categories', categoriesRouter)
 router.use('/questions', questionsRouter)
 router.use('/zodiac', zodiacRoutes)
 router.use('/survey', surveyRoutes)
+router.use('/sessions', sessionRoutes)
+router.use('/responses', responseRoutes)
 
 export default router

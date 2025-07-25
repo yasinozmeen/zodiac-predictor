@@ -51,7 +51,8 @@ export interface QuestionOption {
   orderIndex: number
 }
 
-export interface UserResponse {
+// Legacy UserResponse (kept for backward compatibility)
+export interface LegacyUserResponse {
   questionId: string
   selectedOptionId: string
   answeredAt: Date
@@ -99,8 +100,37 @@ export interface User {
   updatedAt: string
 }
 
+// Session Management Types (Updated for Story 1.2B)
 export interface UserSession {
-  userId: string
-  token: string
-  expiresAt: string
+  id: string
+  sessionId: string
+  ipAddress?: string
+  userAgent?: string
+  progressData: Record<string, any>
+  createdAt: string
+  updatedAt: string
+}
+
+// User Response Types
+export interface UserResponse {
+  id: string
+  sessionId: string
+  questionId: string
+  selectedOptionId: string
+  answeredAt: string
+}
+
+// Zodiac Scoring Types
+export interface ZodiacScoring {
+  id: string
+  questionOptionId: string
+  zodiacSign: string
+  scoreValue: number
+}
+
+// Session-based User Response (replaces old UserResponse)
+export interface SessionUserResponse {
+  questionId: string
+  selectedOptionId: string
+  answeredAt: Date
 }

@@ -41,7 +41,7 @@ export class QuestionService {
       throw new Error(`Failed to fetch questions by category: ${error.message}`)
     }
 
-    return data.map(row => ({
+    return data.map((row: any) => ({
       ...this.mapDatabaseToModel(row),
       options: row.question_options?.map(this.mapOptionDatabaseToModel) || [],
     }))

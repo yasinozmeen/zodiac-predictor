@@ -43,7 +43,7 @@ export interface QuestionOption {
     optionText: string;
     orderIndex: number;
 }
-export interface UserResponse {
+export interface LegacyUserResponse {
     questionId: string;
     selectedOptionId: string;
     answeredAt: Date;
@@ -83,8 +83,30 @@ export interface User {
     updatedAt: string;
 }
 export interface UserSession {
-    userId: string;
-    token: string;
-    expiresAt: string;
+    id: string;
+    sessionId: string;
+    ipAddress?: string;
+    userAgent?: string;
+    progressData: Record<string, any>;
+    createdAt: string;
+    updatedAt: string;
+}
+export interface UserResponse {
+    id: string;
+    sessionId: string;
+    questionId: string;
+    selectedOptionId: string;
+    answeredAt: string;
+}
+export interface ZodiacScoring {
+    id: string;
+    questionOptionId: string;
+    zodiacSign: string;
+    scoreValue: number;
+}
+export interface SessionUserResponse {
+    questionId: string;
+    selectedOptionId: string;
+    answeredAt: Date;
 }
 //# sourceMappingURL=index.d.ts.map
