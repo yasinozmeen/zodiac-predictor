@@ -1,0 +1,302 @@
+[
+  {
+    "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440001",
+    "question_text": "Sabah ilk kalktığınızda yapacağınız ilk şey hangisi olur?",
+    "order_index": 1
+  },
+  {
+    "id": "6ba7b811-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440001",
+    "question_text": "Hafta sonu boş vaktinizi nasıl geçirmeyi tercih edersiniz?",
+    "order_index": 2
+  },
+  {
+    "id": "6ba7b812-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440001",
+    "question_text": "Uyku düzeniniz nasıldır?",
+    "order_index": 3
+  },
+  {
+    "id": "6ba7b813-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440001",
+    "question_text": "Çalışma tarzınızı en iyi nasıl tanımlarsınız?",
+    "order_index": 4
+  },
+  {
+    "id": "6ba7b814-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440001",
+    "question_text": "Düzen ve organizasyon konusunda nasılsınız?",
+    "order_index": 5
+  },
+  {
+    "id": "6ba7b815-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440001",
+    "question_text": "Zamanı nasıl yönetirsiniz?",
+    "order_index": 6
+  },
+  {
+    "id": "6ba7b816-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440001",
+    "question_text": "Enerjiniz gün içinde ne zaman en yüksek seviyede?",
+    "order_index": 7
+  },
+  {
+    "id": "6ba7b817-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440001",
+    "question_text": "Stresle nasıl başa çıkarsınız?",
+    "order_index": 8
+  },
+  {
+    "id": "6ba7b818-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440001",
+    "question_text": "Rahatlamak için ne yaparsınız?",
+    "order_index": 9
+  },
+  {
+    "id": "6ba7b819-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440001",
+    "question_text": "Günlük önceliklerinizi nasıl belirlersiniz?",
+    "order_index": 10
+  },
+  {
+    "id": "6ba7b820-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440002",
+    "question_text": "Sosyal ortamlarda nasıl davranırsınız?",
+    "order_index": 1
+  },
+  {
+    "id": "6ba7b821-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440002",
+    "question_text": "Arkadaş çevreniz nasıldır?",
+    "order_index": 2
+  },
+  {
+    "id": "6ba7b822-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440002",
+    "question_text": "Çatışma durumlarında nasıl davranırsınız?",
+    "order_index": 3
+  },
+  {
+    "id": "6ba7b823-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440002",
+    "question_text": "İletişim tarzınızı nasıl tanımlarsınız?",
+    "order_index": 4
+  },
+  {
+    "id": "6ba7b824-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440002",
+    "question_text": "Liderlik konusunda kendinizi nasıl görüyorsunuz?",
+    "order_index": 5
+  },
+  {
+    "id": "6ba7b825-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440002",
+    "question_text": "Başkalarının duygularını anlama konusunda nasılsınız?",
+    "order_index": 6
+  },
+  {
+    "id": "6ba7b826-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440002",
+    "question_text": "Sosyal aktivitelerden sonra nasıl hissedersiniz?",
+    "order_index": 7
+  },
+  {
+    "id": "6ba7b827-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440002",
+    "question_text": "İnsanlara güvenme konusunda nasılsınız?",
+    "order_index": 8
+  },
+  {
+    "id": "6ba7b828-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440002",
+    "question_text": "Yardıma ihtiyacınız olduğunda ne yaparsınız?",
+    "order_index": 9
+  },
+  {
+    "id": "6ba7b829-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440002",
+    "question_text": "Grup çalışmalarında rolünüz nedir?",
+    "order_index": 10
+  },
+  {
+    "id": "6ba7b830-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440003",
+    "question_text": "Yemek tercihinizi en iyi hangisi tanımlar?",
+    "order_index": 1
+  },
+  {
+    "id": "6ba7b831-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440003",
+    "question_text": "Yemek pişirme konusunda nasılsınız?",
+    "order_index": 2
+  },
+  {
+    "id": "6ba7b832-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440003",
+    "question_text": "Yeme alışkanlıklarınız nasıldır?",
+    "order_index": 3
+  },
+  {
+    "id": "6ba7b833-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440003",
+    "question_text": "İdeal yemek deneyiminiz nasıl olurdu?",
+    "order_index": 4
+  },
+  {
+    "id": "6ba7b834-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440003",
+    "question_text": "Favori içeceğiniz hangisidir?",
+    "order_index": 5
+  },
+  {
+    "id": "6ba7b835-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440003",
+    "question_text": "Tatlı mı tuzlu mu tercih edersiniz?",
+    "order_index": 6
+  },
+  {
+    "id": "6ba7b836-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440003",
+    "question_text": "Yeni yemekleri deneme konusunda nasılsınız?",
+    "order_index": 7
+  },
+  {
+    "id": "6ba7b837-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440003",
+    "question_text": "Öğün zamanlarınız nasıldır?",
+    "order_index": 8
+  },
+  {
+    "id": "6ba7b838-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440003",
+    "question_text": "Keyif verici yemeğiniz nedir?",
+    "order_index": 9
+  },
+  {
+    "id": "6ba7b839-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440003",
+    "question_text": "Sağlıklı beslenme konusunda nasılsınız?",
+    "order_index": 10
+  },
+  {
+    "id": "6ba7b840-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440004",
+    "question_text": "Karar verme hızınız nasıldır?",
+    "order_index": 1
+  },
+  {
+    "id": "6ba7b841-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440004",
+    "question_text": "Karar vermeden önce bilgi toplama yaklaşımınız nedir?",
+    "order_index": 2
+  },
+  {
+    "id": "6ba7b842-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440004",
+    "question_text": "Risk alma konusunda nasılsınız?",
+    "order_index": 3
+  },
+  {
+    "id": "6ba7b843-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440004",
+    "question_text": "Kararlarınızda hangi faktör daha etkilidir?",
+    "order_index": 4
+  },
+  {
+    "id": "6ba7b844-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440004",
+    "question_text": "Önemli kararlar alırken kimden tavsiye alırsınız?",
+    "order_index": 5
+  },
+  {
+    "id": "6ba7b845-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440004",
+    "question_text": "Değişikliklere nasıl adapte olursunuz?",
+    "order_index": 6
+  },
+  {
+    "id": "6ba7b846-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440004",
+    "question_text": "Hatalı kararlarınızla nasıl başa çıkarsınız?",
+    "order_index": 7
+  },
+  {
+    "id": "6ba7b847-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440004",
+    "question_text": "Uzun vadeli planlama konusunda nasılsınız?",
+    "order_index": 8
+  },
+  {
+    "id": "6ba7b848-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440004",
+    "question_text": "Baskı altında karar verme durumunda nasıl davranırsınız?",
+    "order_index": 9
+  },
+  {
+    "id": "6ba7b849-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440004",
+    "question_text": "Aldığınız kararlara bağlılığınız nasıldır?",
+    "order_index": 10
+  },
+  {
+    "id": "6ba7b850-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440005",
+    "question_text": "Yaratıcılığınızı en çok hangi alanda sergilersiniz?",
+    "order_index": 1
+  },
+  {
+    "id": "6ba7b851-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440005",
+    "question_text": "Hangi tür hobiler sizi daha çok cezbeder?",
+    "order_index": 2
+  },
+  {
+    "id": "6ba7b852-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440005",
+    "question_text": "Sanat zevkinizi nasıl tanımlarsınız?",
+    "order_index": 3
+  },
+  {
+    "id": "6ba7b853-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440005",
+    "question_text": "Yeni beceriler öğrenme tarzınız nasıldır?",
+    "order_index": 4
+  },
+  {
+    "id": "6ba7b854-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440005",
+    "question_text": "İlhammınızı nereden alırsınız?",
+    "order_index": 5
+  },
+  {
+    "id": "6ba7b855-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440005",
+    "question_text": "Yaratıcı projelere nasıl yaklaşırsınız?",
+    "order_index": 6
+  },
+  {
+    "id": "6ba7b856-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440005",
+    "question_text": "Yaratıcı işlerinizde mükemmeliyetçilik seviyeniz nasıldır?",
+    "order_index": 7
+  },
+  {
+    "id": "6ba7b857-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440005",
+    "question_text": "Yaratıcı projelerde işbirliği yapma tercihiniz nasıldır?",
+    "order_index": 8
+  },
+  {
+    "id": "6ba7b858-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440005",
+    "question_text": "Yaratıcı blok yaşadığınızda ne yaparsınız?",
+    "order_index": 9
+  },
+  {
+    "id": "6ba7b859-9dad-11d1-80b4-00c04fd430c1",
+    "category_id": "550e8400-e29b-41d4-a716-446655440005",
+    "question_text": "Yenilik ve deneyim konusunda nasılsınız?",
+    "order_index": 10
+  }
+]

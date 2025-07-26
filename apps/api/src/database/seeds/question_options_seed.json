@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "7ba7b810-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b810-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Telefonumu kontrol ederim",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b811-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b810-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Hafif egzersiz yapar veya gerinirim",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b812-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b810-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Kahve veya çay içerim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b813-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b810-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Günümü planlarım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b814-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b811-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Evde rahatlarım, kitap okurum",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b815-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b811-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Doğada yürüyüş yaparım",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b816-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b811-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Arkadaşlarımla buluşurum",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b817-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b811-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Yeni yerler keşfederim",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b818-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b812-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Erken yatar, erken kalkarım",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b819-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b812-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Gece kuşuyum, geç yatarım",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b820-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b812-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Düzensiz uyku saatlerim var",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b821-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b812-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Duruma göre değişir",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b822-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b813-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Planlı ve sistematik çalışırım",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b823-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b813-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Yaratıcı ve esnek yaklaşırım",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b824-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b813-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "İşbirlikçi olarak çalışırım",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b825-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b813-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Hızlı ve atik çalışırım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b826-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b814-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Çok düzenliyim, her şey yerli yerinde",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b827-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b814-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Orta düzeyde, gerektiğinde organize olurum",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b828-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b814-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Yaratıcı karmaşa diyebilirim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b829-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b814-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Düzen benim için önemli değil",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b830-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b815-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Öncelik listesi yapıp dakik takip ederim",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b831-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b815-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Akışına bırakırım, çok sıkı planlama yapmam",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b832-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b815-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Dengeyi korumaya çalışırım",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b833-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b815-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Hep son dakikaya kalır",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b834-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b816-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Sabah erken saatlerde",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b835-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b816-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Gece geç saatlerde",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b836-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b816-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Öğleden sonra",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b837-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b816-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Gün boyunca sabit",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b838-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b817-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Spor yaparak veya yürüyüş yaparak",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b839-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b817-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Nefes alma teknikleri ve meditasyon",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b840-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b817-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Arkadaşlarımla konuşarak",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b841-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b817-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Kendimi işe vererek",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b842-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b818-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Müzik dinlerim",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b843-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b818-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Kitap okurum",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b844-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b818-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Doğada zaman geçiririm",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b845-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b818-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Yaratıcı uğraşlarda bulunurum",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b846-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b819-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Listeler yapar, önem sırasına koyarım",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b847-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b819-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "İçgüdüsel olarak, o anki hissime göre",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b848-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b819-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Başkalarının ihtiyaçlarını önceleyerek",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b849-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b819-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Son teslim tarihlerine göre",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b850-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b820-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Enerjik ve konuşkan olurum",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b851-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b820-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Gözlemci kalır, dinlemeyi tercih ederim",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b852-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b820-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Ortama göre adapte olurum",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b853-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b820-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Liderlik rolü alırım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b854-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b821-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Geniş ama seçici bir çevrem var",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b855-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b821-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Birkaç çok yakın arkadaşım var",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b856-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b821-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Herkesle arkadaş olabilirim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b857-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b821-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Çoğunlukla kendi başıma takılırım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b858-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b822-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Sorunun kaynağını bulup çözmeye odaklanırım",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b859-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b822-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Önce sakinleşir, sonra konuşurum",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b860-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b822-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Uzlaşmacı yaklaşım sergilerim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b861-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b822-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Durumu dramatize etmeden ele alırım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b862-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b823-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Direkt ve açık sözlüyüm",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b863-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b823-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Nazik ve diplomatlık",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b864-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b823-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Eğlenceli ve enerjik",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b865-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b823-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Düşünceli ve analitik",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b866-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b824-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Doğal lider, öne çıkmayı severim",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b867-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b824-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Gerektiğinde liderlik yaparım",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b868-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b824-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Destekleyici rol almayı tercih ederim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b869-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b824-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Liderlikten kaçınırım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b870-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b825-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Çok iyiyim, duygularını hemen anlarım",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b871-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b825-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "İyiyim ama zaman alabilir",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b872-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b825-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Ortalarım, bazen fark ederim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b873-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b825-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Bu konuda pek iyi değilim",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b874-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b826-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Enerjik ve motive hissederim",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b875-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b826-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Yorgun ama mutlu hissederim",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b876-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b826-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Dinlenmeye ihtiyaç duyarım",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b877-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b826-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Duruma göre değişir",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b878-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b827-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Kolayca güvenirim",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b879-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b827-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Zaman içinde güven oluşur",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b880-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b827-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Oldukça temkinliyim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b881-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b827-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Kimseye güvenmem",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b882-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b828-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Yakın arkadaşlarıma hemen danışırım",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b883-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b828-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Ailemden destek ararım",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b884-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b828-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Kendi başıma çözmeye çalışırım",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b885-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b828-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Profesyonel yardım alırım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b886-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b829-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Koordinatör ve organize edici rolü",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b887-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b829-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Yaratıcı fikir üreticisi",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b888-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b829-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Destekleyici ve dinleyici",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b889-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b829-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Analitik ve objektif gözlemci",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b890-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b830-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Baharatlı ve acılı yemekler",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b891-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b830-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Organik ve doğal lezzetler",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b892-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b830-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Konforlu ve tanıdık tatlar",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b893-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b830-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Egzotik ve farklı mutfaklar",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b894-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b831-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Yemek pişirmeyi severim, denemeler yaparım",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b895-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b831-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Temel yemekleri yaparım",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b896-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b831-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Pratik ve hızlı çözümler tercih ederim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b897-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b831-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Yemek pişirmem, dışarıdan alırım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b898-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b832-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Düzenli öğün saatlerim var",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b899-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b832-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Acıktığımda yerim",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b900-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b832-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Atıştırarak besinirim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b901-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b832-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Yemek yemeyi unuturum",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b902-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b833-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Romantik akşam yemeği",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b903-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b833-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Doğada piknik",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b904-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b833-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Arkadaşlarla eğlenceli yemek",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b905-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b833-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Sessiz ve huzurlu ortam",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b906-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b834-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Kahve",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b907-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b834-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Çay",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b908-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b834-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Su ve doğal içecekler",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b909-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b834-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Meyve suları",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b910-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b835-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Kesinlikle tatlı",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b911-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b835-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Kesinlikle tuzlu",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b912-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b835-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "İkisini de severim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b913-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b835-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Ruh halime göre değişir",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b914-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b836-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Her zaman açığım, hemen denerim",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b915-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b836-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Araştırır öğrenir, sonra denerim",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b916-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b836-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Temkinli yaklaşırım",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b917-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b836-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Bildiğim yemekleri tercih ederim",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b918-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b837-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Çok düzenli saatlerim var",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b919-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b837-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Genelde düzenli ama esnek",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b920-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b837-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Düzensiz ama doyurucu",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b921-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b837-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Çok düzensiz",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b922-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b838-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Çikolata",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b923-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b838-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Ev yemekleri",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b924-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b838-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Pizza",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b925-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b838-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Meyve",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b926-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b839-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Çok dikkat ederim, planlı besinirim",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b927-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b839-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Genel olarak sağlıklı olmaya çalışırım",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b928-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b839-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Bazen dikkat ederim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b929-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b839-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Pek dikkat etmem",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b930-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b840-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Çok hızlı, anlık kararlar veririm",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b931-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b840-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Biraz düşünür, makul sürede karar veririm",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b932-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b840-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Uzun süre düşünürüm",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b933-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b840-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Karar vermekte zorlanırım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b934-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b841-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Kapsamlı araştırma yaparım",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b935-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b841-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Temel bilgileri toplarım",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b936-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b841-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "İçgüdülerime güvenirim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b937-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b841-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Başkalarının deneyimlerinden faydalanırım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b938-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b842-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Risk almayı severim",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b939-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b842-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Hesaplı riskler alırım",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b940-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b842-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Temkinli yaklaşırım",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b941-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b842-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Risk almaktan kaçınırım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b942-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b843-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "İçgüdülerim",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b943-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b843-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Mantık ve analiz",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b944-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b843-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "İkisinin dengesi",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b945-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b843-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Duygularım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b946-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b844-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Ailemi ve yakın arkadaşlarımı",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b947-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b844-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Uzmanları ve mentorları",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b948-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b844-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Kendime güvenirim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b949-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b844-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "İnternetten araştırırım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b950-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b845-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Çok hızlı adapte olurum",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b951-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b845-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Biraz zaman alır ama uyum sağlarım",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b952-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b845-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Değişikliklere direnirim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b953-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b845-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Değişiklikten kaçınırım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b954-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b846-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Hemen analiz eder, ders çıkarırım",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b955-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b846-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Kabul eder, devam ederim",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b956-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b846-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Kendimi suçlarım",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b957-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b846-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Başkalarını suçlarım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b958-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b847-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Detaylı planlar yaparım",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b959-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b847-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Genel çerçeve belirlerim",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b960-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b847-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Kısa vadeli hedefler koyarım",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b961-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b847-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Planlama yapmam",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b962-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b848-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Daha da odaklanırım",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b963-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b848-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Sakin kalır, düşünürüm",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b964-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b848-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Stres yapar, hata yapabilirim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b965-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b848-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Karar vermekten kaçınırım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b966-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b849-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Çok güçlü, sonuna kadar giderim",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b967-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b849-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Güçlü ama esnek yaklaşırım",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b968-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b849-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Duruma göre değişir",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b969-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b849-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Kolayca değiştiririm",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b970-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b850-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Yazarak ve tasarlayarak",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b971-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b850-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Müzik yaparak ve çalarak",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b972-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b850-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "El sanatları ve yapımında",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b973-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b850-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Problem çözme ve inovasyon",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b974-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b851-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Sanatsal ve estetik hobiler",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b975-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b851-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Fiziksel ve aktif hobiler",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b976-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b851-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Entelektüel ve öğrenme hobbiler",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b977-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b851-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Sosyal ve toplumsal hobiler",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b978-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b852-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Klasik ve zamansız",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b979-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b852-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Modern ve çağdaş",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b980-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b852-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Soyut ve kavramsal",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b981-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b852-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Rengarenk ve eğlenceli",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b982-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b853-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Uygulamalı ve deneyerek",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b983-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b853-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Teorik olarak öğrenip uygularım",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b984-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b853-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Başkalarından izleyerek",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b985-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b853-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Sistematik ve planlı",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b986-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b854-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Doğadan ve çevreden",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b987-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b854-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "İnsanlardan ve ilişkilerden",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b988-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b854-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Kitaplar ve medyadan",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b989-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b854-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "İç dünyam ve hayallerimden",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b990-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b855-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Planlı ve sistematik başlarım",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b991-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b855-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "İlham geldiğinde spontane başlarım",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b992-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b855-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Araştırır, örnekleri incelerim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b993-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b855-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Başkalarıyla işbirliği yapar başlarım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b994-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b856-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Çok yüksek, mükemmel olmalı",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b995-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b856-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Yüksek ama pratik",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b996-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b856-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Orta seviye, keyifli olsun yeter",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b997-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b856-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Düşük, süreç daha önemli",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b998-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b857-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "İşbirliğini severim",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b999-9dad-11d1-80b4-00c04fd430c1",
+    "question_id": "6ba7b857-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Bazen birlikte bazen yalnız çalışırım",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b810-9dad-11d1-80b4-00c04fd43391",
+    "question_id": "6ba7b857-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Genelde yalnız çalışmayı tercih ederim",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b811-9dad-11d1-80b4-00c04fd43392",
+    "question_id": "6ba7b857-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Tamamen bağımsız çalışırım",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b812-9dad-11d1-80b4-00c04fd43393",
+    "question_id": "6ba7b858-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Başka alanlara odaklanırım",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b813-9dad-11d1-80b4-00c04fd43394",
+    "question_id": "6ba7b858-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Molalar verir, sonra devam ederim",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b814-9dad-11d1-80b4-00c04fd43395",
+    "question_id": "6ba7b858-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Zorla devam etmeye çalışırım",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b815-9dad-11d1-80b4-00c04fd43396",
+    "question_id": "6ba7b858-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "İlham gelene kadar beklerim",
+    "order_index": 4
+  },
+  {
+    "id": "7ba7b816-9dad-11d1-80b4-00c04fd43397",
+    "question_id": "6ba7b859-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Hep yeni şeyler dener, risk alırım",
+    "order_index": 1
+  },
+  {
+    "id": "7ba7b817-9dad-11d1-80b4-00c04fd43398",
+    "question_id": "6ba7b859-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Hesaplı yenilikler yaparım",
+    "order_index": 2
+  },
+  {
+    "id": "7ba7b818-9dad-11d1-80b4-00c04fd43399",
+    "question_id": "6ba7b859-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Bazen yenilik yaparım",
+    "order_index": 3
+  },
+  {
+    "id": "7ba7b819-9dad-11d1-80b4-00c04fd43400",
+    "question_id": "6ba7b859-9dad-11d1-80b4-00c04fd430c1",
+    "option_text": "Geleneksel yöntemleri tercih ederim",
+    "order_index": 4
+  }
+]
