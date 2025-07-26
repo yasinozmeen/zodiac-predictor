@@ -1,0 +1,169 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: zodiac-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: zodiac_dev
+      POSTGRES_USER: zodiac_user
+      POSTGRES_PASSWORD: zodiac_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./apps/api/src/database/migrations:/docker-entrypoint-initdb.d
+    networks:
+      - zodiac-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U zodiac_user -d zodiac_dev"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Redis Cache (Optional - for session storage and caching)
+  redis:
+    image: redis:7-alpine
+    container_name: zodiac-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - zodiac-network
+    command: redis-server --appendonly yes --requirepass zodiac_redis_password
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Backend API Service
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+      target: development
+    container_name: zodiac-api
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      NODE_ENV: development
+      PORT: 3001
+      FRONTEND_URL: http://localhost:3000
+      # Database connection (using Docker service names)
+      DATABASE_URL: postgresql://zodiac_user:zodiac_password@postgres:5432/zodiac_dev
+      # Redis connection
+      REDIS_URL: redis://:zodiac_redis_password@redis:6379
+      # JWT secret (development only)
+      JWT_SECRET: development_jwt_secret_change_in_production
+      # Rate limiting
+      RATE_LIMIT_WINDOW_MS: 900000
+      RATE_LIMIT_MAX_REQUESTS: 100
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./apps/api:/app
+      - /app/node_modules
+    networks:
+      - zodiac-network
+    command: yarn dev
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Frontend Web Service
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      target: development
+    container_name: zodiac-web
+    restart: unless-stopped
+    depends_on:
+      api:
+        condition: service_healthy
+    environment:
+      VITE_API_BASE_URL: http://localhost:3001
+      VITE_NODE_ENV: development
+      VITE_DEV_TOOLS: true
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./apps/web:/app
+      - /app/node_modules
+    networks:
+      - zodiac-network
+    command: yarn dev --host 0.0.0.0
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Database Administration Tool (Optional)
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: zodiac-pgadmin
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@zodiac.local
+      PGADMIN_DEFAULT_PASSWORD: admin_password
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    networks:
+      - zodiac-network
+    profiles:
+      - admin
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+  pgadmin_data:
+    driver: local
+
+networks:
+  zodiac-network:
+    driver: bridge
+
+# Development overrides
+# Use: docker-compose -f docker-compose.yml -f docker-compose.override.yml up
+---
+version: '3.8'
+
+# Override configuration for development
+services:
+  api:
+    volumes:
+      - ./apps/api:/app
+      - /app/node_modules
+      - ./packages/shared:/app/node_modules/@zodiac/shared
+    environment:
+      DEBUG: "true"
+      DETAILED_ERRORS: "true"
+
+  web:
+    volumes:
+      - ./apps/web:/app
+      - /app/node_modules
+      - ./packages/shared:/app/node_modules/@zodiac/shared
+    environment:
+      VITE_DETAILED_ERRORS: "true"
+      VITE_HMR: "true"

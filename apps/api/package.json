@@ -12,7 +12,12 @@
     "type-check": "tsc --noEmit",
     "test": "jest",
     "test:watch": "jest --watch",
-    "clean": "rimraf dist node_modules"
+    "clean": "rimraf dist node_modules",
+    "db:seed": "tsx src/database/seedRunner.ts",
+    "db:seed:json": "tsx -e \"import('./src/database/seeds/jsonSeedRunner.js').then(m => m.runJsonSeeds())\"",
+    "db:seed:status": "tsx -e \"import('./src/database/seeds/jsonSeedRunner.js').then(m => m.getJsonSeedStatus().then(console.log))\"",
+    "db:seed:validate": "tsx -e \"import('./src/database/seeds/jsonSeedRunner.js').then(m => m.validateJsonSeeds().then(console.log))\"",
+    "db:seed:clean": "tsx -e \"import('./src/database/seeds/jsonSeedRunner.js').then(m => m.cleanupJsonSeeds())\""
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.52.1",

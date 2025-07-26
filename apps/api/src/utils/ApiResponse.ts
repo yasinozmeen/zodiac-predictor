@@ -70,14 +70,14 @@ export class ApiResponse {
    * Send updated response
    */
   static updated<T>(res: Response, data: T, message: string): Response {
-    return this.success(res, data, message, 200, 'UPDATED')
+    return this.success(res, data, message, 200)
   }
 
   /**
    * Send deleted response
    */
   static deleted(res: Response, message: string = 'Resource deleted successfully'): Response {
-    return this.success(res, null, message, 200, 'DELETED')
+    return this.success(res, null, message, 200)
   }
 
   /**
@@ -115,35 +115,35 @@ export class ApiResponse {
    * Send multi-status response (for bulk operations)
    */
   static multiStatus<T>(res: Response, data: T, message: string): Response {
-    return this.success(res, data, message, 207, 'MULTI_STATUS')
+    return this.success(res, data, message, 207)
   }
 
   /**
    * Send unauthorized response
    */
   static unauthorized(res: Response, message: string = 'Unauthorized access'): Response {
-    return this.error(res, message, 401, undefined, undefined, 'UNAUTHORIZED')
+    return this.error(res, message, 401)
   }
 
   /**
    * Send forbidden response
    */
   static forbidden(res: Response, message: string = 'Access forbidden'): Response {
-    return this.error(res, message, 403, undefined, undefined, 'FORBIDDEN')
+    return this.error(res, message, 403)
   }
 
   /**
    * Send conflict response
    */
   static conflict(res: Response, message: string, details?: Record<string, unknown>): Response {
-    return this.error(res, message, 409, undefined, details, 'CONFLICT')
+    return this.error(res, message, 409, undefined, details)
   }
 
   /**
    * Send too many requests response
    */
   static tooManyRequests(res: Response, message: string = 'Too many requests'): Response {
-    return this.error(res, message, 429, undefined, undefined, 'TOO_MANY_REQUESTS')
+    return this.error(res, message, 429)
   }
 
   /**
@@ -154,6 +154,6 @@ export class ApiResponse {
     message: string = 'Internal server error',
     error?: any
   ): Response {
-    return this.error(res, message, 500, error, undefined, 'INTERNAL_ERROR')
+    return this.error(res, message, 500, error)
   }
 }
