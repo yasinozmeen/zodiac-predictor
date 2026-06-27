@@ -1,5 +1,10 @@
 # ✨ Zodiac Predictor
 
+[![CI/CD Pipeline](https://github.com/USER/zodiac-predictor/actions/workflows/ci.yml/badge.svg)](https://github.com/USER/zodiac-predictor/actions/workflows/ci.yml)
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
+[![Yarn](https://img.shields.io/badge/Yarn-4.0-2C8EBB.svg)](https://yarnpkg.com/)
+
 AI-powered zodiac compatibility and personality prediction application built
 with React, Node.js, and TypeScript.
 

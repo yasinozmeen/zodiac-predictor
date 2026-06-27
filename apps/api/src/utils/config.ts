@@ -15,7 +15,14 @@ export const config = {
   },
 
   security: {
-    jwtSecret: process.env.JWT_SECRET || 'your_jwt_secret_here_change_in_production',
+    jwtSecret:
+      process.env.JWT_SECRET ||
+      (() => {
+        if (process.env.NODE_ENV === 'production') {
+          throw new Error('JWT_SECRET environment variable is required in production')
+        }
+        return 'development-only-secret'
+      })(),
   },
 
   rateLimit: {

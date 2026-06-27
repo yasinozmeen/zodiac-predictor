@@ -1,11 +1,20 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import LoadingSpinner from '../components/common/LoadingSpinner'
+import { useErrorHandler } from '../hooks/useErrorHandler'
+
+interface FormData {
+  birthDate: string
+  birthTime: string
+  birthLocation: string
+  personality: string
+  interests: string[]
+}
 
 const SurveyPage: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(1)
   const [isLoading, setIsLoading] = useState(false)
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     birthDate: '',
     birthTime: '',
     birthLocation: '',
@@ -13,17 +22,19 @@ const SurveyPage: React.FC = () => {
     interests: [],
   })
   const navigate = useNavigate()
+  const { error, handleError, clearError, retry, isRetrying } = useErrorHandler()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
+    clearError()
 
     try {
       // TODO: Send data to API
       await new Promise(resolve => setTimeout(resolve, 2000)) // Simulate API call
       navigate('/results')
     } catch (error) {
-      console.error('Survey submission failed:', error)
+      handleError(error, 'Anket gönderimi başarısız oldu. Lütfen tekrar deneyin.')
     } finally {
       setIsLoading(false)
     }
@@ -59,6 +70,39 @@ const SurveyPage: React.FC = () => {
               />
             </div>
           </div>
+
+          {error && (
+            <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+              <div className="flex items-start">
+                <div className="flex-shrink-0">
+                  <span className="text-red-400">⚠️</span>
+                </div>
+                <div className="ml-3 flex-1">
+                  <h3 className="text-sm font-medium text-red-800">Hata Oluştu</h3>
+                  <p className="mt-1 text-sm text-red-700">{error.message}</p>
+                  {error.isRetryable && (
+                    <div className="mt-3">
+                      <button
+                        type="button"
+                        onClick={retry}
+                        disabled={isRetrying}
+                        className="bg-red-100 hover:bg-red-200 text-red-800 px-3 py-1 rounded text-sm font-medium transition-colors disabled:opacity-50"
+                      >
+                        {isRetrying ? 'Tekrar deneniyor...' : 'Tekrar Dene'}
+                      </button>
+                    </div>
+                  )}
+                </div>
+                <button
+                  type="button"
+                  onClick={clearError}
+                  className="flex-shrink-0 ml-4 text-red-400 hover:text-red-600"
+                >
+                  ✕
+                </button>
+              </div>
+            </div>
+          )}
 
           <form onSubmit={handleSubmit} className="space-y-8">
             {currentStep === 1 && (
@@ -181,14 +225,12 @@ const SurveyPage: React.FC = () => {
                             if (e.target.checked) {
                               setFormData({
                                 ...formData,
-                                interests: [...formData.interests, interest.key as never],
+                                interests: [...formData.interests, interest.key],
                               })
                             } else {
                               setFormData({
                                 ...formData,
-                                interests: formData.interests.filter(
-                                  (i: string) => i !== interest.key
-                                ),
+                                interests: formData.interests.filter(i => i !== interest.key),
                               })
                             }
                           }}
